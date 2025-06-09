@@ -19,7 +19,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg,#ecc1d7 40%, #ecc1d7 40%, #ce90c7 50%);
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -34,12 +34,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80') center/cover;
+            /*background: url('images/orangebox.jpg') center/cover; */
             opacity: 0.1;
             z-index: -1;
         }
 
         .hero h1 {
+            font-family:'Times New Roman', Times, serif;
             font-size: 3.5rem;
             margin-bottom: 20px;
             font-weight: bold;
@@ -47,7 +48,7 @@
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1rem;
             margin-bottom: 30px;
             max-width: 600px;
             margin-left: auto;
@@ -57,19 +58,19 @@
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            background: linear-gradient(45deg, #FFD700, #FFA500);
-            color: #000;
+            background: linear-gradient(45deg, #fdfdfd);
+            color: #bb84b5;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             font-size: 1.1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(230, 119, 187, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(241, 157, 220, 0.4);
         }
 
         .container {
@@ -116,7 +117,7 @@
             cursor: pointer;
         }
 
-        .category-card:hover {
+        .category-card::after {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
@@ -167,7 +168,7 @@
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover {
+        .gallery-item:active {
             transform: scale(1.05);
         }
 
@@ -184,7 +185,7 @@
             transition: opacity 0.3s ease;
         }
 
-        .gallery-item:hover .gallery-overlay {
+        .gallery-item:active .gallery-overlay {
             opacity: 1;
         }
 
@@ -288,8 +289,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>🎁 Corporate Gifts That Make an Impact</h1>
-            <p>Premium customized gifts and personalized hampers for businesses across India. From employee recognition to client appreciation - we create memorable experiences.</p>
+            <h1>Make Your Business Stand Out</h1>
+            <p>We bring your brand to life through thoughtful personalization. From employee recognition to client appreciation - we create memorable experiences.</p>
             <a href="#contact" class="cta-button">Get Custom Quote</a>
         </div>
     </section>
@@ -302,11 +303,11 @@
             <p class="section-subtitle">See how we've helped brands create memorable corporate gifts</p>
             
             <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">
-                    <div class="gallery-overlay">Custom Branded Mugs</div>
+                <div class="gallery-item" style="background-image: url('images/caps.jpg')">
+                    <div class="gallery-overlay">Custom Utilities</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1556742402-e2ca2c0856d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">
-                    <div class="gallery-overlay">Personalized T-Shirts</div>
+                <div class="gallery-item" style="background-image: url('images/barbie.jpg')">
+                    <div class="gallery-overlay">Creative Brandings</div>
                 </div>
                 <div class="gallery-item" style="background-image: url('images/hamper.jpg')">
                     <div class="gallery-overlay">Luxury Gift Hampers</div>
@@ -317,8 +318,8 @@
                 <div class="gallery-item" style="background-image: url('images/ferrari.jpg')">
                     <div class="gallery-overlay">Custom Candles</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">
-                    <div class="gallery-overlay">Executive Awards</div>
+                <div class="gallery-item" style="background-image: url('images/invites.jpg')">
+                    <div class="gallery-overlay">Invites</div>
                 </div>
             </div>
         </div>
